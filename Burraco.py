@@ -7,7 +7,7 @@ class deck(object):
 	def __init__(self):
 		super(deck, self).__init__()
 		self.mazo = range(104)
-		self.mazo.extend(['J'])
+		self.mazo.extend(['J' for _ in range(6)])
 		random.shuffle(self.mazo)
 		self.mazo.reverse()
 		print self.mazo
