@@ -1,9 +1,9 @@
 **Burraco** 
-
+============
 rummy game like, that allows 4 players to play 2 on 2.
 two whole decks with four extra jokers.
 
-*Object of the game:*
+**Object of the game:**
 Play with partner sitting across from you 
 by team you must complete straights and 7 of a kind to earn points.
 first team member to discard all of his cards wins the round for the team.
@@ -15,7 +15,7 @@ a straight or 7 of a kind is "closed" if it has 7 cards or more.
 "dirty" is when a joker was used.
 
 
-*The deal:*
+**The deal:**
 starting player shuffles the cards
 The player on his left cuts the deck and keeps the bottom half.
 He is entitled to look at the bottom 4 cards and keep any "monos" he finds.
@@ -37,7 +37,7 @@ cards are dealt using mod 13.
 twos are jokers, 
 J are jokers
 
-*points*
+**points**
 A's count as 15 points
 Jokers (monos) count as 20 points
 cards 3 to 7 count as 5
@@ -52,9 +52,9 @@ Grabbing Burraco ( or extra set of cards) earns you 100 points ( not grabbing it
 
 
 
-sample draw:
+**sample draw:**
 shuffled deck:
-
+```python
 [13, 79, 18, 83, 53, 11, 59, 87, 103, 98, 89, 32, 29, 43, 'J', 5, 30, 46, 42, 21, 4, 47, 64, 49, 22, 34, 90, 58, 24, 35, 44, 55, 63, 75, 70, 1, 12, 80, 85, 0, 40, 81, 41, 27, 95, 69, 2, 73, 52, 33, 60, 39, 72, 10, 57, 9, 92, 37, 51, 8, 97, 101, 86, 84, 71, 48, 67, 78, 20, 25, 26, 88, 19, 38, 91, 50, 28, 36, 14, 93, 16, 65, 82, 54, 17, 23, 56, 94, 99, 66, 3, 15, 31, 100, 96, 77, 102, 74, 68, 45, 7, 61, 76, 6, 62]
 
 Player :Charles
@@ -105,3 +105,4 @@ Player :Andres
 [10, 'Trebol']
 [10, 'Diamante']
 [11, 'Diamante']
+```
