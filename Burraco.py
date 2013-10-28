@@ -1,8 +1,6 @@
 import random
 #TODO
-#Sacar buracos
-#repartir de buracos
-#controlar orden de jugadores al repartir (para cambio de turno)
+
 
 class deck(object):
 	"""Deck of cards"""
