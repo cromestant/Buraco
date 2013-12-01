@@ -73,8 +73,8 @@ class juego(object):
         for buracos in self.buracos:
             print "Burraco - "
             for cards in map(self.mazo.easyPrint,buracos):
-                #print cards
-                pass
+                print cards
+                #pass
         for player in self.jugadores:
             print "Player :"+ player.name
             for cards in map(self.mazo.easyPrint,player.mano):
@@ -91,52 +91,35 @@ class juego(object):
         cutter = (self.turno -1)%4
         bur,deal = self.cut()
         self.mazo.mazo = deal
-        print "cut is Bur : " +str(len(bur)) + " and mazo: "+str(len(self.mazo.mazo))
-        self.printStatus()
         monos=0
         #busco monos en el corte.
         for card in bur[-4:]:
             if "Mono" in self.mazo.easyPrint(card):
-                print "Mono en el corte"
                 monos+=1
                 self.jugadores[cutter].addCard(card)
                 bur.remove(card)
-        print "bur length is currently : "+str(len(bur))
         if len(self.mazo.mazo)>=44:
-            print "Repartiendo del mazo primero"
             for i in range(44):
                 j=i%4
                 if monos != 0 and cutter == j:
                     monos -=1
-                    print "Skiping one"
                 else:
                     self.jugadores[j].addCard(self.mazo.takeCard())
-                    print "Giving one to player"
-            print "status after deal from mazo first:" 
-            self.printStatus()
             bur.extend(self.mazo.mazo)
             self.mazo.mazo= bur
-            print "1- status is now after extension "
-            self.printStatus()
             self.mazo.mazo.reverse()
             for i in range(22):
-                j=i%2
-                self.buracos[j].append(self.mazo.takeCard())
+                self.buracos[i%2][i%11]=self.mazo.takeCard()
         else:
-            print "Giving buracos first"
             bur.extend(self.mazo.mazo)
             self.mazo.mazo = bur
-            print "2- Mazo is now "+ str(len(self.mazo.mazo))
             self.mazo.mazo.reverse()
-            print "reversed"
             for i in range(22):
-                j=i%2
-                self.buracos[j].append(self.mazo.takeCard())
+                self.buracos[i%2][i%11]=self.mazo.takeCard()
             for i in range(44):
                 j=i%4
                 if monos != 0 and cutter == j:
                     monos -=1
-                    print "Skipping one"
                 else:
                     self.jugadores[j].addCard(self.mazo.takeCard())
                         
