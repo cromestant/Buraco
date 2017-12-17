@@ -1,11 +1,11 @@
 **Burraco** 
 ============
-rummy game like, that allows 4 players to play 2 on 2.
+rummy like game, that allows 4 players to play 2 on 2.
 two whole decks with four extra jokers.
 
 **Object of the game:**
 Play with partner sitting across from you 
-by team you must complete straights and 7 of a kind to earn points.
+In teams you must complete straights and 7 of a kind to earn points.
 first team member to discard all of his cards wins the round for the team.
 Cards played count s positive points, cards in hand or unplayed (from buracos--wait for it--) count as negative points.
 First team to reach 3k points wins.

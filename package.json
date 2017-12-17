@@ -1,0 +1,27 @@
+{
+  "name": "buraco",
+  "version": "1.0.0",
+  "description": "Juego de buraco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cromestant/Burraco.git"
+  },
+  "keywords": [
+    "game",
+    "server"
+  ],
+  "author": "Charles Romestant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cromestant/Burraco/issues"
+  },
+  "homepage": "https://github.com/cromestant/Burraco#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
