@@ -4,7 +4,7 @@
   "description": "Juego de buraco",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }

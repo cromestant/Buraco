@@ -7,7 +7,7 @@ two whole decks with four extra jokers.
 Play with partner sitting across from you 
 In teams you must complete straights and 7 of a kind to earn points.
 first team member to discard all of his cards wins the round for the team.
-Cards played count s positive points, cards in hand or unplayed (from buracos--wait for it--) count as negative points.
+Cards played count as positive points, cards in hand or unplayed (from buracos --wait for it--) count as negative points.
 First team to reach 3k points wins.
 
 a straight or 7 of a kind is "closed" if it has 7 cards or more.
@@ -16,9 +16,9 @@ a straight or 7 of a kind is "closed" if it has 7 cards or more.
 
 
 **The deal:**
-starting player shuffles the cards
+Starting player shuffles the cards
 The player on his left cuts the deck and keeps the bottom half.
-He is entitled to look at the bottom 4 cards and keep any "monos" he finds.
+He is entitled to look at the bottom 4 cards of the top half and keep any "monos" or jokers he finds.
 
 Starting player deals each player eleven (11) cards, taking care to skip the player on his left X amount of times (x being 0 to 4 , the amount of monos the player found on the cut). 
 
@@ -31,7 +31,7 @@ If the player does not discard a card in order to grab his burraco (plays it or 
 player on the right of the starting player takes a card from the top of the deck
 
 
-started up this game to create a game server and then possibly clients (we or smartphone)
+started up this game to create a game server and then possibly clients (web or smartphone)
 
 cards are dealt using mod 13.
 twos are jokers, 
